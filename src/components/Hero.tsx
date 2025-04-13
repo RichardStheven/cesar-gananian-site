@@ -13,33 +13,63 @@ export default function Hero() {
     if (!svgRef.current) return
 
     gsap.to(svgRef.current, {
-      y: 400,
+      y: 800,
       ease: 'none',
       scrollTrigger: {
         trigger: svgRef.current,
-        start: 'top 120%',
+        start: 'top bottom',
         end: 'bottom top',
-        scrub: true,
+        scrub: 1,
       },
     })
   }, [])
 
   return (
-    <section className="relative h-[200vh] bg-black text-white overflow-hidden">
+    <section className="relative h-screen bg-black text-white overflow-hidden flex items-center px-8 md:px-16">
 
-      {/* Título em duas linhas, alinhado à esquerda */}
-      <div className="absolute top-24 left-12 z-10 text-left leading-none">
-        <h1 className="text-6xl md:text-8xl font-extrabold">O Filme</h1>
-        <h1 className="text-6xl md:text-8xl font-extrabold">Perdido</h1>
+      {/* SVG animado - fundo direito */}
+    
+
+      {/* Coluna esquerda - conteúdo principal */}
+      <div className="relative z-10 flex flex-col items-center md:items-start gap-6 w-full max-w-[420px] ml-10">
+        <h1 className="text-6xl md:text-7xl font-extrabold leading-tight text-center md:text-left">
+          O Filme<br />Perdido
+        </h1>
+
+        <img
+          src="/imagens/o-filme-perdido.jpg"
+          alt="Capa do livro O Filme Perdido"
+          className="w-[190px] md:w-[260px] mx-auto md:mx-0"
+        />
+
+        <a
+          href="https://www.amazon.com.br/dp/6584953289?ref_=cm_sw_r_apin_dp_049Y902PHD57348ER8BD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition-colors text-center w-[200px] mx-auto md:mx-0"
+        >
+          Comprar na Amazon
+        </a>
       </div>
 
-      {/* SVG gigante, alinhado à direita */}
-      <img
-        ref={svgRef}
-        src="/imagens/o-filme-perdido.svg"
-        alt="O Filme Perdido"
-        className="absolute top-1/2 right-0 w-[140vw] md:w-[120vw] h-auto -translate-y-1/2 z-0"
-      />
+
+
+
+      {/* SVG animado à direita */}
+      <div className="hidden md:block absolute right-0 top-0 w-[65%] h-full overflow-hidden z-0">
+        <img
+          ref={svgRef}
+          src="/imagens/o-filme-perdido.svg"
+          alt="Arte animada"
+          className="absolute max-w-none object-contain"
+          style={{
+            right: '0',
+            transform: 'translateX(5%) translateY(-50%)',
+            width: '200%',
+            height: '350%',
+          }}
+        />
+      </div>
     </section>
   )
 }

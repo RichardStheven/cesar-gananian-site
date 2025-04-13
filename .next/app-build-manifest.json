@@ -5,6 +5,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/roteiro/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/roteiro/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

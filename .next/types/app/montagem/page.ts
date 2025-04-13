@@ -1,4 +1,4 @@
-// File: /Users/richard/Downloads/nextjs-meter-template (1)/src/app/montagem/page.tsx
+// File: /Users/richard/Downloads/cesar-gananian-site/src/app/montagem/page.tsx
 import * as entry from '../../../../src/app/montagem/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
