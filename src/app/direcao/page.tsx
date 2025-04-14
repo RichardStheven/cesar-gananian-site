@@ -44,7 +44,6 @@ export default function DirecaoPage() {
         <div className="text-sm uppercase text-right opacity-80 leading-relaxed max-w-xs">
           <span className="block font-semibold mb-1">Clientes</span>
           <p>
-            Brava Filmes, CineBr, Estúdio Aurora, Tempo Produções, BrasilFrame, Ocaso Filmes
           </p>
         </div>
       </div>
