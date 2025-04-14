@@ -13,7 +13,7 @@ export default function Hero() {
     if (!svgRef.current) return
 
     gsap.to(svgRef.current, {
-      y: 800,
+      y: 900,
       ease: 'none',
       scrollTrigger: {
         trigger: svgRef.current,
@@ -25,29 +25,27 @@ export default function Hero() {
   }, [])
 
   return (
+
+  
     <section className="relative h-screen bg-black text-white overflow-hidden flex items-center px-8 md:px-16">
-
-      {/* SVG animado - fundo direito */}
-    
-
+      
       {/* Coluna esquerda - conteúdo principal */}
       <div className="relative z-10 flex flex-col items-center md:items-start gap-6 w-full max-w-[420px] ml-10">
-        <h1 className="text-6xl md:text-7xl font-extrabold leading-tight text-center md:text-left">
+        <h1 className="text-6xl self-center md:text-7xl font-extrabold leading-tight text-center md:text-left">
           O Filme<br />Perdido
         </h1>
 
         <img
           src="/imagens/o-filme-perdido.jpg"
           alt="Capa do livro O Filme Perdido"
-          className="w-[190px] md:w-[260px] mx-auto md:mx-0"
+          className="w-[190px] md:w-[260px] self-center mx-auto md:mx-0"
         />
 
         <a
           href="https://www.amazon.com.br/dp/6584953289?ref_=cm_sw_r_apin_dp_049Y902PHD57348ER8BD"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition-colors text-center w-[200px] mx-auto md:mx-0"
-        >
+className="self-center mt-4 px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-300 transition-colors"        >
           Comprar na Amazon
         </a>
       </div>
