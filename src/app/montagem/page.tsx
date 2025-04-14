@@ -75,16 +75,18 @@ export default function DirecaoPage() {
     <div key={index}>
       <video
         src={item.src}
-        className="w-full h-48 md:h-60 lg:h-72 rounded"
+        className="w-full h-48 md:h-60 lg:h-72 rounded object-cover"
         loop
         autoPlay
         muted
         controls
+        playsInline
       />
       <p className="mt-2 text-center text-sm opacity-70">{item.label}</p>
     </div>
   ))}
 </div>
+
 </section>
 
 
