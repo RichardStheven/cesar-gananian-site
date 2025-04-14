@@ -42,7 +42,7 @@ export default function DirecaoPage() {
 
         {/* Clientes */}
         <div className="text-sm uppercase text-right opacity-80 leading-relaxed max-w-xs">
-          <span className="block font-semibold mb-1">Clientes</span>
+          <span className="block font-semibold mb-1"></span>
           <p>
           </p>
         </div>
@@ -108,3 +108,9 @@ export default function DirecaoPage() {
   </main>
   )
 }
+
+
+
+
+
+
