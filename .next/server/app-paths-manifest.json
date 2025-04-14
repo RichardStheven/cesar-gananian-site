@@ -1,8 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/roteiro/page": "app/roteiro/page.js",
-  "/montagem/page": "app/montagem/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/direcao/page": "app/direcao/page.js",
-  "/sobre/page": "app/sobre/page.js"
-}
