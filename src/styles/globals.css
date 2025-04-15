@@ -311,3 +311,24 @@ body {
   background: rgba(0, 0, 0, 0.3); /* preto translúcido */
   z-index: 1;
 }
+
+
+@media screen and (max-width: 768px) {
+  .bio-texto {
+    flex-direction: column;
+  }
+
+  .bio-texto .coluna {
+    width: 100%;
+  }
+
+  .bio-img {
+    height: 300px; /* ou algo menor que 400px */
+    margin-top: 2rem;
+  }
+
+  .fechar {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

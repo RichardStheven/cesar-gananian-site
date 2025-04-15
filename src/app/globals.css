@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    .bio-texto {
+      flex-direction: column;
+    }
+  
+    .bio-texto .coluna {
+      width: 100%;
+    }
+  
+    .bio-img {
+      height: 300px; /* ou algo menor que 400px */
+      margin-top: 2rem;
+    }
+  
+    .fechar {
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  .bio-modal {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: black;
+    color: #dad1a0;
+    z-index: 99;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Só no desktop, aplica 60% de largura e empurra 20% da esquerda */
+  @media (min-width: 768px) {
+    .bio-modal {
+      width: 60%;
+      left: 20%;
+      transform: none; /* Já tá "centralizado" pelo left */
+    }
+  }
+  
