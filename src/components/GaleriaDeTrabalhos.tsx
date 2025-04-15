@@ -34,8 +34,8 @@ const trabalhos = [
 
 export default function GaleriaMotion() {
   const [ativo, setAtivo] = useState<number | null>(null);
-  const isMobile = useMediaQuery("only screen and (max-width: 768px)");
-  const colunas = isMobile ? 1 : 4;
+  const isMobile = useMediaQuery("only screen and (max-width: 100%)");
+  const colunas = isMobile ? 1 : 6;
 
   const getRenderList = () => {
     if (ativo === null) {
