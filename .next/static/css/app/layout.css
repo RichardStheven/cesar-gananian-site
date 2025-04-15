@@ -1309,7 +1309,7 @@ body {
 .bio-modal {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20%;
   transform: translateX(-50%);
   width: 60vw;
   background: black;
@@ -1423,30 +1423,44 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
+
+.video-fundo {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .hover\:scale-\[1\.02\]:hover {
   --tw-scale-x: 1.02;
   --tw-scale-y: 1.02;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
 .hover\:bg-yellow-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
 }
+
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
 }
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
 }
+
 .group:hover .group-hover\:opacity-90 {
   opacity: 0.9;
 }
+
 @media (min-width: 640px) {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:mx-0 {
@@ -1536,6 +1550,7 @@ body {
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:h-72 {
@@ -1546,3 +1561,4 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+

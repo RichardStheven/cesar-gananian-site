@@ -13,9 +13,8 @@ export default function Montagem() {
     <div>
       {/* SEÇÃO 1 — VÍDEO COM TEXTO CENTRALIZADO */}
       <section className="hero">
-        <video className="video-fundo" autoPlay loop muted>
+        <video className="video-fundo" autoPlay playsInline loop muted>
           <source src="/imagens/5.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo.
         </video>
 
         {/* TEXTO CENTRAL */}

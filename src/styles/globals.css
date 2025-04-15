@@ -345,3 +345,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
+
+.video-fundo {
+  pointer-events: none;
+  user-select: none;
+}
