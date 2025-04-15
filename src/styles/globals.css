@@ -332,3 +332,15 @@ body {
     text-align: center;
   }
 }
+.bio-modal {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: black;
+  color: #dad1a0;
+  z-index: 99;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
