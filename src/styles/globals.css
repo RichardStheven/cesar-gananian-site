@@ -335,6 +335,7 @@ body {
 .bio-modal {
   position: absolute;
   top: 0;
+  left: 0;
   transform: translateX(-50%);
   width: 100vw;
   background: black;

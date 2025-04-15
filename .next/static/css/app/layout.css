@@ -1309,7 +1309,7 @@ body {
 .bio-modal {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 0;
   transform: translateX(-50%);
   width: 60vw;
   background: black;
@@ -1413,6 +1413,7 @@ body {
 .bio-modal {
   position: absolute;
   top: 0;
+  left: 0;
   transform: translateX(-50%);
   width: 100vw;
   background: black;
