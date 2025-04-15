@@ -14,7 +14,6 @@ export default function DirecaoPage() {
     className="absolute top-0 left-0 w-full h-full object-cover z-0"
   >
     <source src="/imagens/ofilmeperdido.mp4" type="video/mp4" />
-    Seu navegador não suporta a tag de vídeo.
   </video>
 
   {/* Overlay escuro para contraste */}
@@ -32,9 +31,8 @@ export default function DirecaoPage() {
 
         {/* Clientes */}
         <div className="text-sm uppercase text-right opacity-80 leading-relaxed max-w-xs">
-          <span className="block font-semibold mb-1">Clientes</span>
+          <span className="block font-semibold mb-1"></span>
           <p>
-            Brava Filmes, CineBr, Estúdio Aurora, Tempo Produções, BrasilFrame, Ocaso Filmes
           </p>
         </div>
       </div>

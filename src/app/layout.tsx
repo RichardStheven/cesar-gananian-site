@@ -1,4 +1,3 @@
-import Header from '../components/Header'
 import '../styles/globals.css'
 import { Playfair_Display } from 'next/font/google'
 
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={playfair.variable}>
 <body className={`${playfair.variable} bg-black text-[#dad1a0] w-full h-full overflow-x-hidden`}>
-  <Header />
   <main className="min-h-screen w-full">{children}</main>
 </body>
 
