@@ -9,17 +9,22 @@ import Bio from "../../components/Bio";
 import Roda from "../../components/Roda";
 import Menu from "../../components/Menu";
 
+
+
+
+
+
 export default function Montagem() {
   return (
-    <div>
-      {/* MENU FIXO NO TOPO */}
-      <Menu />
+    
 
+    <div>
       {/* SEÇÃO 1 — VÍDEO COM TEXTO CENTRALIZADO */}
       <section className="hero">
         <video className="video-fundo" autoPlay playsInline loop muted>
           <source src="/imagens/5.mp4" type="video/mp4" />
         </video>
+        <Menu />
         <Bio />
         {/* TEXTO CENTRAL */}
         <div className="hero-texto">
@@ -27,7 +32,6 @@ export default function Montagem() {
           <p> • Cesar Gananian •</p>
         </div>
       </section>
-
       {/* GALERIAS */}
       <div className="Galeria1">
         <GaleriaDeTrabalhos />
@@ -44,8 +48,7 @@ export default function Montagem() {
       <div className="Galeria">
         <GaleriaM />
       </div>
-
-      <Roda />
+    <Roda />
     </div>
   );
 }

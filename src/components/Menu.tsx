@@ -15,7 +15,7 @@ export default function MenuPrincipal() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="fixed top-6 right-6 z-50">
+    <div className="fixed top-6 left-6 z-50">
       {/* Botão do menu */}
       <button
         onClick={() => setOpen(!open)}

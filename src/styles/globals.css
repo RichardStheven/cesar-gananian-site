@@ -113,7 +113,6 @@ body {
   z-index: 1;
   width: 100vw;
   padding: 4rem 1rem;
-  background: rgba(0, 0, 0, 0.4); /* Faixa escura translúcida */
   display: flex;
   flex-direction: column;
   align-items: center;
