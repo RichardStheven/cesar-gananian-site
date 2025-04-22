@@ -1,45 +1,32 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 
 const links = [
-  { href: '/', label: 'Home' },
   { href: '/montagem', label: 'Montagem' },
   { href: '/roteiro', label: 'Roteiro' },
   { href: '/direcao', label: 'Direção' },
   { href: '/sobre', label: 'Sobre' },
 ]
 
-export default function MenuPrincipal({ hide }: { hide?: boolean }) {
-  const [open, setOpen] = useState(false)
-
-  if (hide) return null
-
+export default function HomePage() {
   return (
-    <div className="fixed top-6 right-6 z-50">
-      {/* Botão do menu */}
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-8 h-8 bg-white/20 hover:bg-[#dad1a0] transition-colors duration-300 rounded-sm"
-        aria-label="Abrir menu"
-      />
+    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center gap-12 px-6 py-20">
+      <h1 className="text-4xl md:text-6xl font-semibold text-center">
+        Cesar Gananian
+      </h1>
 
-      {/* Menu aberto */}
-      {open && (
-        <div className="mt-4 bg-black/90 backdrop-blur-sm text-white text-sm rounded shadow-lg py-3 px-4 flex flex-col gap-2">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="hover:text-[#dad1a0] transition"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      )}
-    </div>
+      <nav className="flex flex-col md:flex-row gap-4 md:gap-8 text-lg">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-white/80 hover:text-[#dad1a0] transition"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
+    </main>
   )
 }

@@ -1,3 +1,5 @@
 {
-  "/montagem/page": "app/montagem/page.js"
+  "/page": "app/page.js",
+  "/montagem/page": "app/montagem/page.js",
+  "/roteiro/page": "app/roteiro/page.js"
 }
