@@ -7,30 +7,39 @@ import FaixaDecorativa from "../components/FaixaDecorativa";
 
 const trabalhos = [
   {
-    thumb: "/imagens/4.webp",
-    video: "/imagens/triz.mp4",
-    label: "Lifestyle",
-    descricao: "Vídeo sobre cotidiano urbano.",
+    thumb: "/imagens/Bandida-o-filme.webp",
+    video: "/imagens/bandida.mp4",
+    label: "Bandida",
+    descricao: `Produção: Paris Filmes / Netflix
+Direção: João Wainer
+Montagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/4.webp",
-    video: "/imagens/triz.mp4",
-    label: "Documentary",
-    descricao: "Documentário poético sobre memória.",
+    thumb: "/imagens/ajaula2.jpg",
+    video: "/imagens/ajaula.mp4",
+    label: "A Jaula",
+    descricao: `Produção: TX Filmes / Buena Vista International
+Direção: João Wainer
+Montagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/2.jpg",
-    video: "/imagens/triz.mp4",
-    label: "Commercial",
-    descricao: "Campanha de moda experimental.",
+    thumb: "/imagens/helipa.jpg",
+    video: "/imagens/helipa.mp4",
+    label: "Helipa",
+    descricao: `Produção: Griffa Filmes
+Direção: Karol Maia
+Montagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/2.jpg",
-    video: "/imagens/triz.mp4",
-    label: "All Demo Reels",
-    descricao: "Compilado de projetos diversos.",
+    thumb: "/imagens/cartas-marcadas.jpg",
+    video: "https://www.youtube.com/embed/fY7JfpGRrvo",
+    label: "Cartas Marcadas",
+    descricao: `Produção: Discovery Brasil
+Direção: Karol Maia
+Montagem: Cesar Gananian`,
   },
 ];
+
 
 export default function GaleriaMotion() {
   const [ativo, setAtivo] = useState<number | null>(null);
@@ -85,44 +94,57 @@ export default function GaleriaMotion() {
           return (
             <div key={item.label + i} className="relative">
               <motion.div
-              transition={{ duration: 0.7, ease: "easeInOut" }}
+                transition={{ duration: 0.7, ease: "easeInOut" }}
                 layout
-                className="bg-black rounded overflow-hidden shadow w-full max-w-[1080px] max-h-[1080px] object-cover cursor-pointer"
+                className="bg-black rounded overflow-hidden shadow w-full max-w-[1080px] object-cover cursor-pointer"
                 onClick={() => setAtivo(item.originalIndex)}
               >
+                {/* Imagem quadrada */}
                 <img
                   src={item.thumb}
                   alt={item.label}
-                  className="w-full h-48 md:h-60 lg:h-72 max-w-[1080px] max-h-[1080px] object-cover rounded"
+                  className="aspect-square w-full object-cover rounded"
                 />
                 <p className="p-2 text-center text-sm opacity-70">{item.label}</p>
               </motion.div>
 
+              {/* Card expandido com vídeo retangular */}
               {ativo === item.originalIndex && (
-                <motion.div
-                  layout
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="absolute top-0 left-0 w-full md:w-[calc(450%+1.5rem)] bg-black rounded shadow flex flex-col md:flex-row overflow-hidden z-50"
-                >
-                  <video
-                    src={item.video}
-                    controls
-                    className="w-full md:min-w-[300px] md:max-w-[300px] h-auto object-cover"
-                    poster={item.thumb}
-                  />
-                  <div className="flex-1 p-4 flex flex-col justify-between">
-                    <h2 className="text-xl font-semibold mb-2">{item.label}</h2>
-                    <p className="text-sm text-white">{item.descricao}</p>
-                    <button
-                      className="mt-4 text-sm text-[#dad1a0]"
-                      onClick={() => setAtivo(null)}
-                    >
-                      Fechar
-                    </button>
-                  </div>
-                </motion.div>
+    <motion.div
+    layout
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="absolute top-0 left-0 w-full md:w-[calc(450%+1.5rem)] bg-black rounded shadow overflow-hidden z-50 flex flex-col md:flex-row"
+  >
+    {/* VÍDEO RETANGULAR */}
+    <div className="w-full md:w-2/3">
+      <video
+        src={item.video}
+        controls
+        className="aspect-video w-full object-cover"
+        poster={item.thumb}
+      />
+    </div>
+
+    {/* TEXTO AO LADO OU ABAIXO */}
+   {/* TEXTO AO LADO OU ABAIXO */}
+<div className="w-full md:w-1/3 p-6 flex flex-col">
+  <div className="mt-auto mb-auto">
+    <h2 className="text-lg md:text-xl font-semibold text-white mb-2">{item.label}</h2>
+    <p className="text-sm md:text-base text-white whitespace-pre-line break-words">
+      {item.descricao}
+    </p>
+  </div>
+  <button
+    className="text-sm mt-6 text-[#dad1a0] underline self-start"
+    onClick={() => setAtivo(null)}
+  >
+    Fechar
+  </button>
+</div>
+
+  </motion.div>
               )}
             </div>
           );
@@ -130,4 +152,4 @@ export default function GaleriaMotion() {
       </div>
     </div>
   );
-} 
+}
