@@ -25,7 +25,7 @@ const trabalhos = [
   },
   {
     thumb: '/imagens/cartas-marcadas.jpg',
-    video: '/imagens/cm1.mp4',
+    video: '/imagens/CM11.mp4',
     label: 'Cartas Marcadas',
     descricao: `Produção: Discovery Brasil\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
