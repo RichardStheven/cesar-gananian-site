@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const trabalhos = [
   {
-    thumb: '/imagens/outrostempos.jpg',
+    thumb: '/imagens/ot1.jpeg',
     video: '/imagens/outrostempos.mp4',
     label: 'Outros Tempos',
     descricao: `Produção: Pródigo/ HBO MAX\nDireção : João Wainer e Cesar Gananian\nMontagem: Cesar Gananian`,

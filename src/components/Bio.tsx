@@ -15,7 +15,7 @@ export default function BioCesar() {
         className="flex items-center gap-2 text-white text-lg border border-white/30 rounded px-8 py-3 bg-black/50 backdrop-blur-md hover:brightness-110 transition"
         onClick={() => setOpen(true)}
       >
-        Biografia
+        Bio Montador
       </button>
 
       {/* MODAL */}
