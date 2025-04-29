@@ -31,7 +31,7 @@ Direção: Luciano Cian
 Montagem: Cesar Gananian`,
   },
   {
-    thumb: '/imagens/fp.jpg',
+    thumb: '/imagens/lp1.jpeg',
     video: '/imagens/ofilmeperdido.mp4',
     titulo: 'O Filme Perdido',
     descricao: `Produção: Companhia das Letras
