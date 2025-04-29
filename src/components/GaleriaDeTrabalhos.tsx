@@ -8,25 +8,25 @@ const trabalhos = [
   {
     thumb: '/imagens/Bandida-o-filme.webp',
     video: '/imagens/bandida.mp4',
-    label: 'Bandida',
+    label: 'Bandida/ Paris Filmes e Netflix',
     descricao: `Produção: Paris Filmes / Netflix\nDireção: João Wainer\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/ajaula1.jpeg',
     video: '/imagens/ajaula.mp4',
-    label: 'A Jaula',
+    label: 'A JAULA / Star+',
     descricao: `Produção: TX Filmes / Buena Vista International\nDireção: João Wainer\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/rac1.jpeg',
     video: '/imagens/helipa.mp4',
-    label: 'Helipa',
+    label: 'Helipa/ MTV',
     descricao: `Produção: Griffa Filmes\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/cartas-marcadas.jpg',
     video: '/imagens/CM11.mp4',
-    label: 'Cartas Marcadas',
+    label: 'Cartas Marcadas/ Discovery Brasil',
     descricao: `Produção: Discovery Brasil\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
 ];

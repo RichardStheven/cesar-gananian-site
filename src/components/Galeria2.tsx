@@ -7,25 +7,25 @@ const trabalhos = [
   {
     thumb: '/imagens/ot1.jpeg',
     video: '/imagens/outrostempos.mp4',
-    label: 'Outros Tempos',
+    label: 'Outros Tempos/ MAX',
     descricao: `Produção: Pródigo/ HBO MAX\nDireção : João Wainer e Cesar Gananian\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/junho.jpg',
     video: '/imagens/junho.mp4',
-    label: 'Junho',
+    label: 'Junho / Folha de São Paulo',
     descricao: `Produção: Folha de São Paulo\nDireção : João Wainer\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/contos.jpg',
     video: '/imagens/contos.mp4',
-    label: 'Cantos De Um Livro Sagrado',
+    label: 'Cantos De Um Livro Sagrado Premio É Tudo Verdade',
     descricao: `Melhor Curta Brasileiro no Festival É Tudo Verdade\nSeleção Oficial no Rotterdam Film Festival\nDireção: Cassiana Der Haroutiounian & Cesar Gananian\nMontagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/Inaudito.jpg',
     video: '/imagens/Inaudito.mp4',
-    label: 'Inaudito',
+    label: 'Inaudito Melhor Filme Festival de Tiradentes',
     descricao: `Premio de Melhor Filme no Festival de Tiradentes\nDireção : Gregorio Gananian\nMontagem: Cesar Gananian, Danielly O.M.M., Gregorio Gananian`,
   },
 ];
