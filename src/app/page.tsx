@@ -17,7 +17,7 @@ export default function HomePage() {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 z-0"
       >
         <source src="/imagens/CS111.mp4" type="video/mp4" />
       </video>
