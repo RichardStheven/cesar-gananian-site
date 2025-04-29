@@ -1,6 +1,8 @@
 'use client'
 
 import Icon from "./Icon";
+import Bio from "./Bio";
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 export default function RodapeCesar() {
   return (
@@ -9,8 +11,24 @@ export default function RodapeCesar() {
         {/* LINHA DE CONTATO PRINCIPAL */}
         <p className="text-base text-white/80">Entre em contato</p>
 
-        {/* ÍCONES CENTRAIS */}
-        <Icon />
+        {/* ÍCONES CENTRAIS ATUALIZADOS */}
+        <div className="flex gap-8 text-[#dad1a0] text-2xl">
+          <a href="https://www.instagram.com/cesargananian" target="_blank" rel="noopener" className="hover:scale-110 transition">
+            <FaInstagram />
+          </a>
+          <a href="https://wa.me/5511996918254" target="_blank" rel="noopener" className="hover:scale-110 transition">
+            <FaWhatsapp />
+          </a>
+          <a href="mailto:cesargananian@hotmail.com" target="_blank" rel="noopener" className="hover:scale-110 transition">
+            <FaEnvelope />
+          </a>
+          <a href="https://www.linkedin.com/in/cesar-gananian-b44897182/" target="_blank" rel="noopener" className="hover:scale-110 transition">
+            <FaLinkedin />
+          </a>
+        </div>
+
+        {/* BOTÃO DA BIOGRAFIA */}
+        <Bio />
 
         {/* DIVISOR E CRÉDITO */}
         <div className="w-full h-px bg-white/10 mt-6" />

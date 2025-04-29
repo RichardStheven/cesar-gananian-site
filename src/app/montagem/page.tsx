@@ -8,30 +8,26 @@ import GaleriaM from "../../components/GaleriaM";
 import Bio from "../../components/Bio";
 import Roda from "../../components/Roda";
 import Menu from "../../components/Menu";
-
-
-
-
-
+import FaixaDecorativa from "../../components/FaixaDecorativa";
 
 export default function Montagem() {
   return (
-    
-
     <div>
-      {/* SEÇÃO 1 — VÍDEO COM TEXTO CENTRALIZADO */}
-      <section className="hero">
-        <video className="video-fundo" autoPlay playsInline loop muted>
-          <source src="/imagens/5.mp4" type="video/mp4" />
-        </video>
-        <Menu />
-        <Bio />
-        {/* TEXTO CENTRAL */}
-        <div className="hero-texto">
-          <h1>Montagem</h1>
-          <p> • Cesar Gananian •</p>
-        </div>
-      </section>
+      {/* MENU */}
+      <Menu />
+
+      {/* SEÇÃO 1 — TÍTULO, SUBTÍTULO, FAIXA */}
+      <section className="bg-black text-white flex flex-col items-center justify-center pt-24 pb-0">
+  <div className="text-center">
+    <h1 className="text-4xl md:text-6xl font-bold">Montagem</h1>
+    <p className="text-lg md:text-2xl mt-4">• Cesar Gananian •</p>
+
+    {/* Faixa decorativa separadora */}
+    <div className="w-full max-w-7xl h-px bg-[#dad1a0] mt-10 mb-16"></div>
+    <Bio />
+  </div>
+</section>
+
       {/* GALERIAS */}
       <div className="Galeria1">
         <GaleriaDeTrabalhos />
@@ -48,7 +44,8 @@ export default function Montagem() {
       <div className="Galeria">
         <GaleriaM />
       </div>
-    <Roda />
+
+      <Roda />
     </div>
   );
 }

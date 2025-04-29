@@ -6,7 +6,6 @@ const links = [
   { href: '/montagem', label: 'Montagem' },
   { href: '/roteiro', label: 'Roteiro' },
   { href: '/direcao', label: 'Direção' },
-  { href: '/sobre', label: 'Sobre' },
 ]
 
 export default function HomePage() {

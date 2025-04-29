@@ -1,155 +1,100 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "@react-hook/media-query";
-import FaixaDecorativa from "../components/FaixaDecorativa";
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import FaixaDecorativa from '../components/FaixaDecorativa';
 
 const trabalhos = [
   {
-    thumb: "/imagens/Bandida-o-filme.webp",
-    video: "/imagens/bandida.mp4",
-    label: "Bandida",
-    descricao: `Produção: Paris Filmes / Netflix
-Direção: João Wainer
-Montagem: Cesar Gananian`,
+    thumb: '/imagens/Bandida-o-filme.webp',
+    video: '/imagens/bandida.mp4',
+    label: 'Bandida',
+    descricao: `Produção: Paris Filmes / Netflix\nDireção: João Wainer\nMontagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/ajaula2.jpg",
-    video: "/imagens/ajaula.mp4",
-    label: "A Jaula",
-    descricao: `Produção: TX Filmes / Buena Vista International
-Direção: João Wainer
-Montagem: Cesar Gananian`,
+    thumb: '/imagens/ajaula1.jpeg',
+    video: '/imagens/ajaula.mp4',
+    label: 'A Jaula',
+    descricao: `Produção: TX Filmes / Buena Vista International\nDireção: João Wainer\nMontagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/helipa.jpg",
-    video: "/imagens/helipa.mp4",
-    label: "Helipa",
-    descricao: `Produção: Griffa Filmes
-Direção: Karol Maia
-Montagem: Cesar Gananian`,
+    thumb: '/imagens/rac1.jpeg',
+    video: '/imagens/helipa.mp4',
+    label: 'Helipa',
+    descricao: `Produção: Griffa Filmes\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
   {
-    thumb: "/imagens/cartas-marcadas.jpg",
-    video: "https://www.youtube.com/embed/fY7JfpGRrvo",
-    label: "Cartas Marcadas",
-    descricao: `Produção: Discovery Brasil
-Direção: Karol Maia
-Montagem: Cesar Gananian`,
+    thumb: '/imagens/cartas-marcadas.jpg',
+    video: '/imagens/cm1.mp4',
+    label: 'Cartas Marcadas',
+    descricao: `Produção: Discovery Brasil\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
 ];
 
-
-export default function GaleriaMotion() {
+export default function GaleriaNova() {
   const [ativo, setAtivo] = useState<number | null>(null);
-  const isMobile = useMediaQuery("only screen and (max-width: 100%)");
-  const colunas = isMobile ? 1 : 6;
-
-  const getRenderList = () => {
-    if (ativo === null) {
-      return trabalhos.map((item, i) => ({
-        ...item,
-        index: i,
-        originalIndex: i,
-        ocultar: false,
-      }));
-    }
-
-    const linha = Math.floor(ativo / colunas);
-    const start = linha * colunas;
-    const end = start + colunas;
-
-    const isUltimoDaLinha = ativo === end - 1 || ativo === trabalhos.length - 1;
-
-    let novaOrdem = [...trabalhos];
-
-    if (!isMobile && isUltimoDaLinha) {
-      const [ultimo] = novaOrdem.splice(ativo, 1);
-      novaOrdem.splice(start, 0, ultimo);
-    }
-
-    return novaOrdem.map((item, i) => {
-      const estaNaMesmaLinha = Math.floor(i / colunas) === linha;
-      const ocultar = ativo !== null && estaNaMesmaLinha && trabalhos[ativo] !== item;
-
-      return {
-        ...item,
-        index: i,
-        originalIndex: trabalhos.indexOf(item),
-        ocultar,
-      };
-    });
-  };
-
-  const renderList = getRenderList();
 
   return (
-    <div className="px-6">
+    <div className="px-6 py-10">
       <FaixaDecorativa />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        {renderList.map((item, i) => {
-          if (item.ocultar) return null;
 
-          return (
-            <div key={item.label + i} className="relative">
-              <motion.div
-                transition={{ duration: 0.7, ease: "easeInOut" }}
-                layout
-                className="bg-black rounded overflow-hidden shadow w-full max-w-[1080px] object-cover cursor-pointer"
-                onClick={() => setAtivo(item.originalIndex)}
+      {/* GRID ou MODAL */}
+      <AnimatePresence>
+        {ativo === null ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
+          >
+            {trabalhos.map((item, i) => (
+              <div
+                key={i}
+                className="relative bg-black rounded overflow-hidden shadow cursor-pointer"
+                onClick={() => setAtivo(i)}
               >
-                {/* Imagem quadrada */}
                 <img
                   src={item.thumb}
                   alt={item.label}
-                  className="aspect-square w-full object-cover rounded"
+                  className="aspect-square w-full object-cover hover:scale-105 transition-transform"
                 />
-                <p className="p-2 text-center text-sm opacity-70">{item.label}</p>
-              </motion.div>
-
-              {/* Card expandido com vídeo retangular */}
-              {ativo === item.originalIndex && (
-    <motion.div
-    layout
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    className="absolute top-0 left-0 w-full md:w-[calc(450%+1.5rem)] bg-black rounded shadow overflow-hidden z-50 flex flex-col md:flex-row"
-  >
-    {/* VÍDEO RETANGULAR */}
-    <div className="w-full md:w-2/3">
-      <video
-        src={item.video}
-        controls
-        className="aspect-video w-full object-cover"
-        poster={item.thumb}
-      />
-    </div>
-
-    {/* TEXTO AO LADO OU ABAIXO */}
-   {/* TEXTO AO LADO OU ABAIXO */}
-<div className="w-full md:w-1/3 p-6 flex flex-col">
-  <div className="mt-auto mb-auto">
-    <h2 className="text-lg md:text-xl font-semibold text-white mb-2">{item.label}</h2>
-    <p className="text-sm md:text-base text-white whitespace-pre-line break-words">
-      {item.descricao}
-    </p>
-  </div>
-  <button
-    className="text-sm mt-6 text-[#dad1a0] underline self-start"
-    onClick={() => setAtivo(null)}
-  >
-    Fechar
-  </button>
-</div>
-
-  </motion.div>
-              )}
+                <p className="p-2 text-center text-sm text-white/70">{item.label}</p>
+              </div>
+            ))}
+          </motion.div>
+        ) : (
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className="fixed inset-0 bg-black flex flex-col md:flex-row z-50 p-6 overflow-y-auto"
+          >
+            {/* PLAYER */}
+            <div className="w-full md:w-2/3 flex items-center justify-center">
+              <video
+                src={trabalhos[ativo].video}
+                controls
+                className="aspect-video w-full max-w-4xl object-cover"
+                poster={trabalhos[ativo].thumb}
+              />
             </div>
-          );
-        })}
-      </div>
+
+            {/* TEXTO */}
+            <div className="w-full md:w-1/3 flex flex-col justify-center p-6 text-white">
+              <h2 className="text-2xl font-semibold mb-4">{trabalhos[ativo].label}</h2>
+              <p className="whitespace-pre-line text-sm leading-relaxed">{trabalhos[ativo].descricao}</p>
+
+              <button
+                onClick={() => setAtivo(null)}
+                className="mt-8 text-sm text-[#dad1a0] underline self-start"
+              >
+                Fechar
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
