@@ -25,7 +25,7 @@ Montagem: Cesar Gananian`,
   {
     thumb: '/imagens/tz.jpg',
     video: '/imagens/tz.mp4',
-    titulo: 'Elevação Mental (TRIZ)',
+    titulo: 'Triz - Elevação Mental',
     descricao: `Produção: Ana Lisboa
 Direção e montagem: Cesar Gananian
 `,

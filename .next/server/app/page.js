@@ -285,6 +285,16 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 
 /***/ }),
 
+/***/ "(sc_client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%22path%22%3A%22src%2Fapp%2Flayout.tsx%22%2C%22import%22%3A%22Playfair_Display%22%2C%22arguments%22%3A%5B%7B%22subsets%22%3A%5B%22latin%22%5D%2C%22variable%22%3A%22--font-playfair%22%2C%22display%22%3A%22swap%22%7D%5D%2C%22variableName%22%3A%22playfair%22%7D&modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fstyles%2Fglobals.css&server=true!":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%22path%22%3A%22src%2Fapp%2Flayout.tsx%22%2C%22import%22%3A%22Playfair_Display%22%2C%22arguments%22%3A%5B%7B%22subsets%22%3A%5B%22latin%22%5D%2C%22variable%22%3A%22--font-playfair%22%2C%22display%22%3A%22swap%22%7D%5D%2C%22variableName%22%3A%22playfair%22%7D&modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fstyles%2Fglobals.css&server=true! ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "(sc_client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fapp%2Fpage.tsx&server=true!":
 /*!******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fapp%2Fpage.tsx&server=true! ***!
@@ -292,16 +302,6 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/page.tsx */ \"(sc_client)/./src/app/page.tsx\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNjX2NsaWVudCkvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTJGVXNlcnMlMkZyaWNoYXJkJTJGRG93bmxvYWRzJTJGY2VzYXItZ2FuYW5pYW4tc2l0ZSUyRnNyYyUyRmFwcCUyRnBhZ2UudHN4JnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL25leHRqcy1tZXRlci10ZW1wbGF0ZS8/MjZlZSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIi9Vc2Vycy9yaWNoYXJkL0Rvd25sb2Fkcy9jZXNhci1nYW5hbmlhbi1zaXRlL3NyYy9hcHAvcGFnZS50c3hcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(sc_client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fapp%2Fpage.tsx&server=true!\n");
-
-/***/ }),
-
-/***/ "(sc_client)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fstyles%2Fglobals.css&modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%22path%22%3A%22src%2Fapp%2Flayout.tsx%22%2C%22import%22%3A%22Playfair_Display%22%2C%22arguments%22%3A%5B%7B%22subsets%22%3A%5B%22latin%22%5D%2C%22variable%22%3A%22--font-playfair%22%2C%22display%22%3A%22swap%22%7D%5D%2C%22variableName%22%3A%22playfair%22%7D&server=true!":
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fsrc%2Fstyles%2Fglobals.css&modules=%2FUsers%2Frichard%2FDownloads%2Fcesar-gananian-site%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%22path%22%3A%22src%2Fapp%2Flayout.tsx%22%2C%22import%22%3A%22Playfair_Display%22%2C%22arguments%22%3A%5B%7B%22subsets%22%3A%5B%22latin%22%5D%2C%22variable%22%3A%22--font-playfair%22%2C%22display%22%3A%22swap%22%7D%5D%2C%22variableName%22%3A%22playfair%22%7D&server=true! ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ (() => {
-
-
 
 /***/ }),
 

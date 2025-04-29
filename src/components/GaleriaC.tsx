@@ -9,7 +9,7 @@ const videos = [
   {
     thumb: '/imagens/ng1.jpg',
     video: '/imagens/ng1.mp4',
-    titulo: 'Nossa Gente | Episódio 1: Por um Futuro',
+    titulo: 'Nossa Gente/ Ep 01 /Banco do Brasil',
     descricao: `Produção: Vudoo Filmes
 Direção: Luciano Cian
 Montagem: Cesar Gananian`,
@@ -17,7 +17,7 @@ Montagem: Cesar Gananian`,
   {
     thumb: '/imagens/ng2.jpg',
     video: '/imagens/ng2.mp4',
-    titulo: 'Nossa Gente | Episódio 2: Por Onde For',
+    titulo: 'Nossa Gente/ Ep 02 /Banco do Brasil',
     descricao: `Produção: Vudoo Filmes
 Direção: Luciano Cian
 Montagem: Cesar Gananian`,
@@ -25,7 +25,7 @@ Montagem: Cesar Gananian`,
   {
     thumb: '/imagens/ng3.jpg',
     video: '/imagens/ng3.mp4',
-    titulo: 'Nossa Gente | Episódio 3: Por cada Família',
+    titulo: 'Nossa Gente/ Ep 03 /Banco do Brasil',
     descricao: `Produção: Vudoo Filmes
 Direção: Luciano Cian
 Montagem: Cesar Gananian`,
@@ -33,14 +33,14 @@ Montagem: Cesar Gananian`,
   {
     thumb: '/imagens/lp1.jpeg',
     video: '/imagens/ofilmeperdido.mp4',
-    titulo: 'O Filme Perdido',
+    titulo: 'O Fime Perdido/ Companhia das Letras',
     descricao: `Produção: Companhia das Letras
 Direção e montagem: Cesar Gananian`,
   },
   {
     thumb: '/imagens/va.jpg',
     video: '/imagens/va.mp4',
-    titulo: 'Violão Athayde',
+    titulo: 'Rosa/ Lutheria Athayde',
     descricao: `Direção e montagem: Cesar Gananian`,
   },
 ]
