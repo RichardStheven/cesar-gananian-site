@@ -30,7 +30,7 @@ Direção e montagem: Cesar Gananian
   },
   {
     thumb: '/imagens/SA.jpg',
-    video: '/imagens/SA.mp4',
+    video: '/imagens/SVA.mp4',
     titulo: 'O som vem assim (TRIZ)',
     descricao: `Direção : Cesar Gananian
 `,

@@ -5,9 +5,6 @@ import Link from 'next/link'
 
 const links = [
   { href: '/', label: 'Home' },
-  { href: '/montagem', label: 'Montagem' },
-  { href: '/roteiro', label: 'Roteiro' },
-  { href: '/direcao', label: 'Direção' },
 ]
 
 export default function MenuPrincipal() {

@@ -26,8 +26,8 @@ Seleção Oficial Clermont Ferrand `,
     descricao: `Produção: Pródigo/ HBO MAX\nDireção : João Wainer e Cesar Gananian\nMontagem: Cesar Gananian`,
   },
   {
-    thumb: '/imagens/AD.jpg',
-    video: '/imagens/CM11.mp4',
+    thumb: '/imagens/ad1.png',
+    video: '/imagens/ad1.mp4',
     label: 'O ANTES E O DEPOIS / Uol',
     descricao: `Produção: Uol
 Direção: Cesar Gananian e João Waine`,
