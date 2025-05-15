@@ -349,3 +349,12 @@ body {
   pointer-events: none;
   user-select: none;
 }
+
+/* globals.css ou tailwind.config.css */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -70,14 +70,14 @@ export default function BioCesar() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="w-full md:w-2/3 mt-10 md:mt-0 md:pl-16 flex flex-col justify-center"
             >
-              <h2 className="text-4xl font-bold mb-10 text-center md:text-left">Cesar Gananian</h2>
+              <h2 className="text-4xl font-bold mb-10 text-center md:text-left">Cesar Gananian - Bio Roteirista</h2>
 
               <div className="space-y-6 text-justify text-base leading-relaxed max-w-2xl">
                 <p>
-                  Cesar Gananian atua como roteirista e diretor, desenvolvendo projetos tanto na ficção quanto no documentário, com originalidade, humor e uma abordagem fundamentada em extensa pesquisa cinematográfica.
+                  Cesar Gananian atua como roteirista, desenvolvendo projetos tanto na ficção quanto no documentário, com originalidade, humor e uma abordagem fundamentada em extensa pesquisa cinematográfica.
                 </p>
                 <p>
-                  Foi roteirista, ao lado de Tais Nunes e João Wainer, do longa-metragem <strong>Bandida</strong>, produzido pela Paris Filmes. O filme foi o mais assistido no Brasil pela Netflix em 2024 e alcançou o segundo lugar no ranking mundial da plataforma entre os filmes de língua não inglesa.
+                  Foi roteirista, ao lado de Thaís Nunes e João Wainer, do longametragem <strong>Bandida</strong>, produzido pela Paris Filmes. O filme foi o mais assistido no Brasil pela Netflix em 2024 e alcançou o segundo lugar no ranking mundial da plataforma entre os filmes de língua não inglesa.
                 </p>
                 <p>
                   No documentário, dirigiu e roteirizou <strong>Cantos de um Livro Sagrado</strong>, em parceria com Cassiana Der Haroutiounian. A obra venceu o prêmio de Melhor Documentário Brasileiro de Curta-Metragem no Festival É Tudo Verdade e integrou a seleção oficial de festivais internacionais como Rotterdam Film Festival, BIFF London e Vancouver Film Festival.

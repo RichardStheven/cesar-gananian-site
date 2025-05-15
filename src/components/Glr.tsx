@@ -30,6 +30,22 @@ Direção : João Wainer
 Roteiro : Cesar Gananian`,
   },
   {
+    thumb: '/imagens/TR.webp',
+    video: '/imagens/TR.mp4',
+    label: 'Rapsodia Armenia',
+    descricao: `Direção e Roteiro: Cassiana der Haroutiounian, Cesar Gananian e Gary Gananian
+Prêmio de Melhor Filme no Golden Apricot Yerevan`,
+  },
+  {
+    thumb: '/imagens/ad1.png',
+    video: '/imagens/ad1.mp4',
+    label: 'O ANTES E O DEPOIS / Uol',
+    descricao: `Produção: Uol
+Direção e Roteiro: Cesar Gananian e João Waine`,
+  },
+
+
+  {
     thumb: '/imagens/HP.webp',
     video: '/imagens/HP.mp4',
     label: 'Cidadão K/ Tv Folha',

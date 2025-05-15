@@ -43,6 +43,15 @@ Direção e montagem: Cesar Gananian`,
     titulo: 'Rosa/ Lutheria Athayde',
     descricao: `Direção e montagem: Cesar Gananian`,
   },
+
+  {
+    thumb: '/imagens/sp.jpg',
+    video: '/imagens/sp.mp4',
+    titulo: 'A Folha Que Pensa',
+    descricao: `Produção: Folha de São Paulo
+Direção : João Wainer
+Montagem: Cesar Gananian`,
+  },
 ]
 
 export default function GaleriaCarrossel() {

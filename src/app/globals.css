@@ -53,3 +53,11 @@
     padding: 3rem 2rem;
     border-radius: 8px;
   }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }

@@ -64,41 +64,42 @@ export default function BioCesar() {
             </div>
 
             {/* TEXTO */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="w-full md:w-2/3 mt-10 md:mt-0 md:pl-16 flex flex-col justify-center"
-            >
-              <h2 className="text-4xl font-bold mb-10 text-center md:text-left">Cesar Gananian</h2>
+{/* TEXTO */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.6 }}
+  className="w-full md:w-2/3 mt-10 md:mt-0 md:pl-16 flex flex-col justify-center text-sm leading-relaxed"
+>
+  <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center md:text-left">Cesar Gananian – Bio Direção</h2>
 
-              <div className="space-y-6 text-justify text-base leading-relaxed max-w-2xl">
-                <p>
-                  Cesar Gananian é diretor de ficção e documentários, com obras premiadas e exibidas em dezenas de festivais nacionais e internacionais. Em seu trabalho, busca explorar a linguagem cinematográfica com originalidade, criando narrativas que ampliam as possibilidades estéticas e expressivas do cinema.
-                </p>
-                <p>
-                  Em 2022, seu filme <strong>Cantos de um Livro Sagrado</strong>, dirigido em parceria com Cassiana Der Haroutiounian, conquistou o prêmio de Melhor Curta Brasileiro no festival É Tudo Verdade e integrou a seleção oficial do prestigiado Rotterdam International Film Festival.
-                </p>
-                <p>
-                  Seu outro curta, <strong>Filme Som</strong>, percorreu mais de trinta festivais internacionais e recebeu Menção Honrosa no Prêmio Itamaraty do Festival Internacional de Curtas de São Paulo.
-                </p>
-                <p>
-                  Além do cinema, Gananian também se destacou na produção audiovisual, dirigindo o videoclipe <strong>Elevação Mental</strong> do artista Triz, que ultrapassou 17 milhões de visualizações. No ano seguinte, produziu e co-dirigiu <strong>O Que Se Cala</strong> para a icônica cantora Elza Soares.
-                </p>
-                <p>
-                  Em 2020, co-dirigiu o filme <strong>A Árvore</strong> (dirigido por Ester Laccava e João Wainer), estrelado por Alessandra Negrini, e foi co-diretor e montador do episódio <strong>Cenas de Casamento</strong> da série <strong>Outros Tempos</strong>, produzida pela HBO MAX.
-                </p>
-                <p>
-                  Em 2012, dirigiu junto de Cassiana Der Haroutiounian e Gary Gananian o documentário <strong>Rapsódia Armênia</strong>. O filme ficou em cartaz por 3 meses em São Paulo e venceu o prêmio de Melhor Filme no Festival Golden Apricot em Yerevan, Armênia.
-                </p>
-                <p>
-                  Cesar Gananian também trabalhou como diretor de segunda unidade do longa-metragem <strong>Bandida</strong> (dirigido por João Wainer), produzido pela Paris Filmes e filmado no Rio de Janeiro em 2023.
-                </p>
-                <p>
-                  Sua formação inclui estudos em atuação no <strong>Lee Strasberg Institute</strong> em Nova York, Direção Cinematográfica na <strong>Escuela de Cine y Televisión Séptima Ars</strong> em Madrid e Cinema pela <strong>FAAP</strong>, em São Paulo.
-                </p>
-              </div>
-            </motion.div>
+  <div className="space-y-3 text-justify max-w-2xl">
+    <p>
+      Cesar Gananian é diretor de ficção e documentários, com obras premiadas e exibidas em dezenas de festivais nacionais e internacionais. Em seu trabalho, busca explorar a linguagem cinematográfica com originalidade, criando narrativas que ampliam as possibilidades estéticas e expressivas do cinema.
+    </p>
+    <p>
+      Em 2022, seu filme <strong>Cantos de um Livro Sagrado</strong>, dirigido com Cassiana Der Haroutiounian, venceu o É Tudo Verdade e integrou a seleção oficial do Rotterdam International Film Festival. O filme também foi pré-selecionado para o Oscar na categoria Best Documentary Short Film.
+    </p>
+    <p>
+      Com <strong>Filme Som</strong>, percorreu mais de trinta festivais internacionais e recebeu Menção Honrosa no Prêmio Itamaraty do Festival Internacional de Curtas de São Paulo.
+    </p>
+    <p>
+      Dirigiu o clipe <strong>Elevação Mental</strong> (Triz), com mais de 17 milhões de views. Em seguida, co-dirigiu <strong>O Que Se Cala</strong> com Elza Soares.
+    </p>
+    <p>
+      Em 2020, co-dirigiu <strong>A Árvore</strong> (dir. Ester Laccava e João Wainer), estrelado por Alessandra Negrini, e foi montador e co-diretor do episódio <strong>Cenas de Casamento</strong> da série <strong>Outros Tempos</strong>, da HBO MAX.
+    </p>
+    <p>
+      Em 2012, dirigiu com Cassiana Der Haroutiounian e Gary Gananian o doc <strong>Rapsódia Armênia</strong>, que ficou 3 meses em cartaz em SP e venceu Melhor Filme no Golden Apricot Festival (Yerevan).
+    </p>
+    <p>
+      Foi diretor de segunda unidade do longa <strong>Bandida</strong> (dir. João Wainer), produzido pela Paris Filmes, filmado no RJ em 2023.
+    </p>
+    <p>
+      Formado em atuação pelo <strong>Lee Strasberg Institute</strong> (NY), Direção Cinematográfica na <strong>Séptima Ars</strong> (Madrid) e Cinema pela <strong>FAAP</strong> (SP).
+    </p>
+  </div>
+</motion.div>
           </motion.div>
         )}
       </AnimatePresence>

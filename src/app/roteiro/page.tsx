@@ -18,7 +18,7 @@ export default function Montagem() {
       <section className="bg-black text-white flex flex-col items-center justify-center pt-24 pb-0">
   <div className="text-center">
     <h1 className="text-4xl md:text-6xl font-bold">Roteiro</h1>
-    <p className="text-lg md:text-2xl mt-4">• Cesar Gananian •</p>
+    <p className="text-lg md:text-2xl mt-4"> Cesar Gananian </p>
 
     {/* Faixa decorativa separadora */}
     <div className="w-full max-w-7xl h-px bg-[#dad1a0] mt-10 mb-16"></div>

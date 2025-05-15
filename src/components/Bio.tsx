@@ -70,7 +70,7 @@ export default function BioCesar() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="w-full md:w-2/3 mt-10 md:mt-0 md:pl-16 flex flex-col justify-center"
             >
-              <h2 className="text-4xl font-bold mb-10 text-center md:text-left">Cesar Gananian</h2>
+              <h2 className="text-4xl font-bold mb-10 text-center md:text-left">Cesar Gananian - Bio Montador</h2>
 
               <div className="space-y-6 text-justify text-base leading-relaxed max-w-2xl">
                 <p>
