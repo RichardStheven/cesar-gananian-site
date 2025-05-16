@@ -7,7 +7,7 @@ const videos = [
   { videoId: 'wrDdQXhg-SE' },
   { videoId: 'M8EP5pyOHas' },
   { videoId: 'KrFMPYhDT3s' },
-  { video: '/imagens/ep3.mp4' }, // vídeo local
+  { video: '/imagens/ep3.mp4', thumb: '/imagens/ofp.jpg' }, 
   { videoId: 'WSGF8xuNSoc' },
   { videoId: 'C0dX494EyvM' },
   { videoId: 'xinmx80FVuU' },
