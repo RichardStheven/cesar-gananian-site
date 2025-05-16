@@ -37,7 +37,7 @@ Roteiro : Cesar Gananian`,
 Prêmio de Melhor Filme no Golden Apricot Yerevan`,
   },
   {
-    thumb: '/imagens/ad1.png',
+    thumb: '/imagens/ad5.jpeg',
     video: '/imagens/ad1.mp4',
     label: 'O ANTES E O DEPOIS / Uol',
     descricao: `Produção: Uol
