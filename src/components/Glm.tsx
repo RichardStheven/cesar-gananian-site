@@ -35,6 +35,13 @@ Direção e montagem: Cesar Gananian
     descricao: `Direção : Cesar Gananian
 `,
   },
+  {
+    thumb: '/imagens/tz1.jpg',
+    video: '/imagens/tz1.mp4',
+    titulo: 'Pra Berlin (Triz)',
+    descricao: `Direção : Cesar Gananian
+`,
+  },
 
 ]
 

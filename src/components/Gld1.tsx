@@ -26,7 +26,7 @@ Seleção Oficial Clermont Ferrand `,
     descricao: `Produção: Pródigo/ HBO MAX\nDireção : João Wainer e Cesar Gananian\nMontagem: Cesar Gananian`,
   },
   {
-    thumb: '/imagens/ad1.png',
+    thumb: '/imagens/ad5.jpeg',
     video: '/imagens/ad1.mp4',
     label: 'O ANTES E O DEPOIS / Uol',
     descricao: `Produção: Uol
@@ -46,6 +46,13 @@ Prêmio de Melhor Filme no Golden Apricot Yerevan`,
     label: 'A arvore',
     descricao: `Direção : João Wainer e Ester Laccava
 Co-direção e Montagem: Cesar Gananian`,
+  },
+
+  {
+    thumb: '/imagens/tz2.jpg',
+    video: '/imagens/tz2.mp4',
+    label: 'A boca do Lixo',
+    descricao: `Direção e montagem: Cesar Gananian`,
   },
 
 ];
