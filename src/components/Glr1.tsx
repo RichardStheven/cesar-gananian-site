@@ -7,7 +7,7 @@ const videos = [
   { videoId: 'wrDdQXhg-SE' },
   { videoId: 'M8EP5pyOHas' },
   { videoId: 'KrFMPYhDT3s' },
-  { video: '/imagens/ep3.mp4', thumb: '/imagens/ofp.jpg' }, 
+  { video: '/imagens/ep3.mp4', thumb: '/imagens/ofp.jpg' }, // vídeo local com thumb
   { videoId: 'WSGF8xuNSoc' },
   { videoId: 'C0dX494EyvM' },
   { videoId: 'xinmx80FVuU' },
@@ -62,12 +62,9 @@ export default function GaleriaVideos() {
                   className="w-full h-full object-cover group-hover:opacity-80 transition-all"
                 />
               ) : (
-                <video
-                  src={video.video}
+                <img
+                  src={video.thumb}
                   className="w-full h-full object-cover group-hover:opacity-80 transition-all"
-                  muted
-                  playsInline
-                  preload="metadata"
                 />
               )}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent px-4 py-3 text-sm"></div>
