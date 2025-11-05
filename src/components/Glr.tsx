@@ -6,6 +6,13 @@ import FaixaDecorativa from '../components/FaixaDecorativa';
 
 const trabalhos = [
   {
+    thumb: '/imagens/AD.jpg',
+    video: '/VideoMontagemCinema/MeuAyrtonpor AdrianeGalisteu.mp4',
+    label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
+    descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nRoteiro: Camila Kamimura, Cesar Gananian e João Wainer`,
+    videoThumb: true,
+  },
+  {
     thumb: '/imagens/Bandida-o-filme.webp',
     video: '/imagens/bandida.mp4',
     label: 'Bandida / Paris Filmes e Netflix',
@@ -89,11 +96,21 @@ export default function GaleriaNova() {
                 className="relative bg-black rounded overflow-hidden shadow cursor-pointer"
                 onClick={() => setAtivo(i)}
               >
-                <img
-                  src={item.thumb}
-                  alt={item.label}
-                  className="aspect-square w-full object-cover hover:scale-105 transition-transform"
-                />
+                {item.videoThumb ? (
+                  <video
+                    src={item.video}
+                    preload="auto"
+                    muted
+                    playsInline
+                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                  />
+                ) : (
+                  <img
+                    src={item.thumb}
+                    alt={item.label}
+                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                  />
+                )}
                 <p className="p-2 text-center text-sm text-white/70">{item.label}</p>
               </div>
             ))}
@@ -108,12 +125,20 @@ export default function GaleriaNova() {
           >
             {/* PLAYER */}
             <div className="w-full md:w-2/3 flex items-center justify-center">
-              <video
-                src={trabalhos[ativo].video}
-                controls
-                className="aspect-video w-full max-w-4xl object-cover"
-                poster={trabalhos[ativo].thumb}
-              />
+              {trabalhos[ativo].videoThumb ? (
+                <video
+                  src={trabalhos[ativo].video}
+                  controls
+                  className="aspect-video w-full max-w-4xl object-cover"
+                />
+              ) : (
+                <video
+                  src={trabalhos[ativo].video}
+                  controls
+                  className="aspect-video w-full max-w-4xl object-cover"
+                  poster={trabalhos[ativo].thumb}
+                />
+              )}
             </div>
 
             {/* TEXTO */}

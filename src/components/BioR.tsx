@@ -77,19 +77,22 @@ export default function BioCesar() {
                   Cesar Gananian atua como roteirista, desenvolvendo projetos tanto na ficção quanto no documentário, com originalidade, humor e uma abordagem fundamentada em extensa pesquisa cinematográfica.
                 </p>
                 <p>
-                  Foi roteirista, ao lado de Thaís Nunes e João Wainer, do longametragem <strong>Bandida</strong>, produzido pela Paris Filmes. O filme foi o mais assistido no Brasil pela Netflix em 2024 e alcançou o segundo lugar no ranking mundial da plataforma entre os filmes de língua não inglesa.
+                  Em 2025, foi co-roteirista da série Meu Ayrton / Por Adriane Galisteu (HBO), colaborando no desenvolvimento e estrutura narrativa da produção.
                 </p>
                 <p>
-                  No documentário, dirigiu e roteirizou <strong>Cantos de um Livro Sagrado</strong>, em parceria com Cassiana Der Haroutiounian. A obra venceu o prêmio de Melhor Documentário Brasileiro de Curta-Metragem no Festival É Tudo Verdade e integrou a seleção oficial de festivais internacionais como Rotterdam Film Festival, BIFF London e Vancouver Film Festival.
+                  Foi também roteirista, ao lado de Thaís Nunes e João Wainer, do longa-metragem Bandida, produzido pela Paris Filmes. O filme foi o mais assistido no Brasil pela Netflix em 2024 e alcançou o segundo lugar no ranking mundial da plataforma entre os filmes de língua não inglesa.
                 </p>
                 <p>
-                  Entre 2012 e 2013, foi roteirista e editor do programa <strong>TV Folha</strong>, responsável por mais de 50 reportagens no Brasil e nos Estados Unidos, atuando como enviado especial. Seu trabalho sobre as manifestações de junho de 2013 recebeu o Prêmio EXXO Jornalístico daquele ano.
+                  No documentário, dirigiu e roteirizou Cantos de um Livro Sagrado, em parceria com Cassiana Der Haroutiounian. A obra venceu o prêmio de Melhor Documentário Brasileiro de Curta-Metragem no Festival É Tudo Verdade e integrou a seleção oficial de festivais internacionais como Rotterdam Film Festival, BIFF London e Vancouver Film Festival.
                 </p>
                 <p>
-                  Sua formação inclui o curso de roteiro com <strong>Robert McKee</strong> (NY), atuação no <strong>Lee Strasberg Institute</strong> (NY), direção cinematográfica na <strong>Escuela de Cine y Televisión Séptima Ars</strong>, em Madrid, e cinema pela <strong>FAAP</strong>, em São Paulo.
+                  Entre 2012 e 2013, foi roteirista e editor do programa TV Folha, responsável por mais de 50 reportagens no Brasil e nos Estados Unidos, atuando como enviado especial. Seu trabalho sobre as manifestações de junho de 2013 recebeu o Prêmio Esso de Jornalismo daquele ano.
                 </p>
                 <p>
-                  Sua graphic novel <strong>O Filme Perdido</strong> foi publicada pela Companhia das Letras e lançada no Cinesesc durante a Mostra de Cinema de 2022, acompanhada por uma exposição das obras originais. A HQ foi indicada ao Prêmio Jabuti e ao HQ MIX em 2023 e foi selecionada como um dos cem quadrinhos brasileiros mais emblemáticos da última década pelo Itamaraty.
+                  Sua formação inclui o curso de roteiro com Robert McKee (NY), atuação no Lee Strasberg Institute (NY), direção cinematográfica na Escuela de Cine y Televisión Séptima Ars (Madri) e Cinema pela FAAP (São Paulo).
+                </p>
+                <p>
+                  Sua graphic novel O Filme Perdido foi publicada pela Companhia das Letras e lançada no Cinesesc durante a Mostra de Cinema de 2022, acompanhada por uma exposição das obras originais. A HQ foi indicada ao Prêmio Jabuti e ao HQ MIX em 2023 e foi selecionada como um dos cem quadrinhos brasileiros mais emblemáticos da última década pelo Itamaraty.
                 </p>
               </div>
             </motion.div>

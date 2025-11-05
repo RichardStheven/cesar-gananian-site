@@ -7,6 +7,27 @@ import FaixaDecorativaP from '../components/FaixaDecorativaP';
 
 const videos = [
   {
+    thumb: '/imagens/4.webp',
+    video: '/VideoMontagemPublicidade/PapelSemente.mp4',
+    titulo: 'Papel Semente: Gemini no Meet / Google',
+    descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
+    videoThumb: true,
+  },
+  {
+    thumb: '/imagens/4.webp',
+    video: '/VideoMontagemPublicidade/Cacauaré.mp4',
+    titulo: 'Cacauaré: Gemini no Gmail / Google',
+    descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
+    videoThumb: true,
+  },
+  {
+    thumb: '/imagens/4.webp',
+    video: '/VideoMontagemPublicidade/AocaGameLab.mp4',
+    titulo: 'Aoca Game Lab: App Gemini / Google',
+    descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
+    videoThumb: true,
+  },
+  {
     thumb: '/imagens/ng1.jpg',
     video: '/imagens/ng1.mp4',
     titulo: 'Nossa Gente/ Ep 01 /Banco do Brasil',
@@ -76,13 +97,23 @@ export default function GaleriaCarrossel() {
             onClick={() => abrirModal(i)}
           >
             <div className="relative w-full aspect-video">
-              <Image
-                src={item.thumb}
-                alt={item.titulo}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                priority
-              />
+              {item.videoThumb ? (
+                <video
+                  src={item.video}
+                  preload="metadata"
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                />
+              ) : (
+                <Image
+                  src={item.thumb}
+                  alt={item.titulo}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  priority
+                />
+              )}
             </div>
             <div className="p-4">
               <h3 className="text-sm font-light tracking-wide opacity-70 group-hover:opacity-100 transition">

@@ -6,6 +6,21 @@ import FaixaDecorativa from '../components/FaixaDecorativa';
 
 const trabalhos = [
   {
+    thumb: '/imagens/AD.jpg',
+    video: '/VideoMontagemCinema/MeuAyrtonpor AdrianeGalisteu.mp4',
+    label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
+    descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nMontagem: Cesar Gananian`,
+    videoThumb: true,
+  },
+  {
+    thumb: '/imagens/AN.jpg',
+    video: '/VideoMontagemCinema/AquiNãoEntraLuz.mp4',
+    label: 'Aqui Não Entra Luz / Prêmio Festival de Brasília',
+    descricao: `Melhor Direção no Festival de Brasília 2025\nSeleção Oficial no IDFA 2025\nDireção: Karol Maia\nMontagem: Cesar Gananian e Fer Krajuska`,
+    videoThumb: true,
+    thumbSeek: 30,
+  },
+  {
     thumb: '/imagens/Bandida-o-filme.webp',
     video: '/imagens/bandida.mp4',
     label: 'Bandida / Paris Filmes e Netflix',
@@ -53,11 +68,38 @@ export default function GaleriaNova() {
                 className="relative bg-black rounded overflow-hidden shadow cursor-pointer"
                 onClick={() => setAtivo(i)}
               >
-                <img
-                  src={item.thumb}
-                  alt={item.label}
-                  className="aspect-square w-full object-cover hover:scale-105 transition-transform"
-                />
+                {item.videoThumb ? (
+                  <video
+                    ref={(el) => {
+                      if (!el) return;
+                      const setTime = () => {
+                        try {
+                          if (typeof item.thumbSeek === 'number') {
+                            el.currentTime = item.thumbSeek;
+                          }
+                        } catch {}
+                      };
+                      if (typeof item.thumbSeek === 'number') {
+                        if (el.readyState >= 1) {
+                          setTime();
+                        } else {
+                          el.addEventListener('loadedmetadata', setTime, { once: true });
+                        }
+                      }
+                    }}
+                    src={item.video}
+                    preload="auto"
+                    muted
+                    playsInline
+                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                  />
+                ) : (
+                  <img
+                    src={item.thumb}
+                    alt={item.label}
+                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                  />
+                )}
                 <p className="p-2 text-center text-sm text-white/70">{item.label}</p>
               </div>
             ))}
@@ -72,12 +114,20 @@ export default function GaleriaNova() {
           >
             {/* PLAYER */}
             <div className="w-full md:w-2/3 flex items-center justify-center">
-              <video
-                src={trabalhos[ativo].video}
-                controls
-                className="aspect-video w-full max-w-4xl object-cover"
-                poster={trabalhos[ativo].thumb}
-              />
+              {trabalhos[ativo].videoThumb ? (
+                <video
+                  src={trabalhos[ativo].video}
+                  controls
+                  className="aspect-video w-full max-w-4xl object-cover"
+                />
+              ) : (
+                <video
+                  src={trabalhos[ativo].video}
+                  controls
+                  className="aspect-video w-full max-w-4xl object-cover"
+                  poster={trabalhos[ativo].thumb}
+                />
+              )}
             </div>
 
             {/* TEXTO */}

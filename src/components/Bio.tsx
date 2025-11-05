@@ -77,19 +77,22 @@ export default function BioCesar() {
                   Cesar Gananian é um montador experiente, com mais de duas décadas de atuação em projetos de destaque, abrangendo ficção, documentários, videoclipes e publicidade. Reconhecido pela precisão e criatividade, colaborou com grandes nomes como HBO Max, Buena Vista e Paris Filmes, agregando valor narrativo às produções.
                 </p>
                 <p>
-                  Em 2024, liderou a montagem do longa-metragem <strong>Bandida - A Número Um</strong>, dirigido por João Wainer, que se tornou o filme brasileiro mais assistido na Netflix naquele ano. Também assinou a montagem da série <strong>Helipa - Um Autorretrato</strong>, da Griffa Filmes.
+                  Em 2025, foi montador-chefe da série Meu Ayrton / Por Adriane Galisteu (dir. João Wainer, HBO), e assinou a montagem do longa-metragem Aqui Não Entra Luz (dir. Karol Maia) vencedor do Prêmio de Melhor Direção no Festival de Brasília. No mesmo ano, editou três filmes publicitários da Google Gemini, reforçando sua versatilidade entre o cinema autoral e o mercado internacional.
                 </p>
                 <p>
-                  Entre seus trabalhos premiados, destaca-se <strong>Cantos de um Livro Sagrado</strong> (2022), vencedor do prêmio de Melhor Curta Brasileiro no Festival É Tudo Verdade, e <strong>A Jaula</strong> (2020), estrelado por Chay Suede e Alexandre Nero.
+                  Em 2024, liderou a montagem do longa-metragem Bandida - A Número Um, dirigido por João Wainer, que se tornou o filme brasileiro mais assistido na Netflix naquele ano. Também assinou a montagem da série Helipa - Um Autorretrato, da Griffa Filmes e lançado pela MTV.
                 </p>
                 <p>
-                  Na música, montou clipes emblemáticos como <strong>Boa Esperança</strong> (Emicida), <strong>Vida Loka</strong> (Bonde Rolê), <strong>Elevação Mental</strong> (Triz) e <strong>O que se Cala</strong> (Elza Soares).
+                  Entre seus trabalhos premiados, destaca-se Cantos de um Livro Sagrado (2022), vencedor do prêmio de Melhor Curta Brasileiro no Festival É Tudo Verdade, e A Jaula (2020), estrelado por Chay Suede e Alexandre Nero.
                 </p>
                 <p>
-                  De 2012 a 2014, integrou a equipe do <strong>TV Folha</strong> (TV Cultura), conquistando o Prêmio Esso de Jornalismo, e montou o documentário <strong>Junho</strong>, lançado pela O2 Play.
+                  Na música, montou clipes emblemáticos como Boa Esperança (Emicida), Vida Loka (Bonde Rolê), Elevação Mental (Triz) e O que se Cala (Elza Soares).
                 </p>
                 <p>
-                  Formado em Cinema pela <strong>FAAP</strong> (SP), com especialização no <strong>Lee Strasberg Institute</strong> (NY) e na <strong>Septima Ars</strong> (Madrid), Cesar desenvolveu uma assinatura de montagem que valoriza a visão dos cineastas e impacta o público.
+                  De 2012 a 2014, integrou a equipe do TV Folha (TV Cultura), conquistando o Prêmio Esso de Jornalismo, e montou o documentário Junho, lançado pela O2 Play.
+                </p>
+                <p>
+                  Formado em Cinema pela FAAP (SP), com especialização no Lee Strasberg Institute (NY) e na Septima Ars (Madrid), Cesar desenvolveu uma assinatura de montagem que valoriza a visão dos cineastas e impacta o público.
                 </p>
               </div>
             </motion.div>
