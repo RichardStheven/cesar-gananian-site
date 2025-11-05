@@ -5,27 +5,30 @@ import Image from 'next/image'
 import FaixaDecorativa from "../components/FaixaDecorativaP";
 import FaixaDecorativaP from '../components/FaixaDecorativaP';
 
-const videos = [
+type Item = {
+  titulo: string;
+  descricao: string;
+  youtubeId?: string;
+  video?: string;
+  thumb?: string;
+  videoThumb?: boolean;
+};
+
+const videos: Item[] = [
   {
-    thumb: '/imagens/4.webp',
-    video: '/VideoMontagemPublicidade/PapelSemente.mp4',
+    youtubeId: '6Ea0iqCmoic',
     titulo: 'Papel Semente: Gemini no Meet / Google',
     descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
-    videoThumb: true,
   },
   {
-    thumb: '/imagens/4.webp',
-    video: '/VideoMontagemPublicidade/cacauare.mp4',
+    youtubeId: 'wN_jMikO85k',
     titulo: 'Cacauaré: Gemini no Gmail / Google',
     descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
-    videoThumb: true,
   },
   {
-    thumb: '/imagens/4.webp',
-    video: '/VideoMontagemPublicidade/AocaGameLab.mp4',
+    youtubeId: 'xl9V3vYbLZ0',
     titulo: 'Aoca Game Lab: App Gemini / Google',
     descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
-    videoThumb: true,
   },
   {
     thumb: '/imagens/ng1.jpg',
@@ -97,7 +100,16 @@ export default function GaleriaCarrossel() {
             onClick={() => abrirModal(i)}
           >
             <div className="relative w-full aspect-video">
-              {item.videoThumb ? (
+              {item.youtubeId ? (
+                // YouTube thumbnail
+                // Using a plain img to avoid Next/Image remote config
+                <img
+                  src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
+                  alt={item.titulo}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  loading="lazy"
+                />
+              ) : item.videoThumb ? (
                 <video
                   src={item.video}
                   preload="metadata"
@@ -107,7 +119,7 @@ export default function GaleriaCarrossel() {
                 />
               ) : (
                 <Image
-                  src={item.thumb}
+                  src={item.thumb || ''}
                   alt={item.titulo}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
@@ -129,11 +141,22 @@ export default function GaleriaCarrossel() {
         <div className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-6">
           <div className="w-full max-w-6xl bg-black rounded shadow-lg flex flex-col md:flex-row overflow-hidden">
             <div className="w-full md:w-2/3 aspect-video">
-              <video
-                src={atual.video}
-                controls
-                className="w-full h-full object-cover"
-              />
+              {atual.youtubeId ? (
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${atual.youtubeId}?rel=0`}
+                  title={atual.titulo}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              ) : (
+                <video
+                  src={atual.video}
+                  controls
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
 
             <div className="w-full md:w-1/3 p-6 flex flex-col">

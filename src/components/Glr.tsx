@@ -4,13 +4,20 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FaixaDecorativa from '../components/FaixaDecorativa';
 
-const trabalhos = [
+type Trabalho = {
+  thumb?: string;
+  video?: string;
+  youtubeId?: string;
+  label: string;
+  descricao: string;
+  videoThumb?: boolean;
+};
+
+const trabalhos: Trabalho[] = [
   {
-    thumb: '/imagens/AD.jpg',
-    video: '/VideoMontagemCinema/meu-ayrton-por-adriane-galisteu.mp4',
+    youtubeId: 'BqQQUSuz1-o',
     label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
     descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nRoteiro: Camila Kamimura, Cesar Gananian e João Wainer`,
-    videoThumb: true,
   },
   {
     thumb: '/imagens/Bandida-o-filme.webp',
@@ -96,7 +103,14 @@ export default function GaleriaNova() {
                 className="relative bg-black rounded overflow-hidden shadow cursor-pointer"
                 onClick={() => setAtivo(i)}
               >
-                {item.videoThumb ? (
+                {item.youtubeId ? (
+                  <img
+                    src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
+                    alt={item.label}
+                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                    loading="lazy"
+                  />
+                ) : item.videoThumb ? (
                   <video
                     src={item.video}
                     preload="auto"
@@ -125,12 +139,17 @@ export default function GaleriaNova() {
           >
             {/* PLAYER */}
             <div className="w-full md:w-2/3 flex items-center justify-center">
-              {trabalhos[ativo].videoThumb ? (
-                <video
-                  src={trabalhos[ativo].video}
-                  controls
-                  className="aspect-video w-full max-w-4xl object-cover"
-                />
+              {trabalhos[ativo].youtubeId ? (
+                <div className="aspect-video w-full max-w-4xl">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${trabalhos[ativo].youtubeId}?rel=0`}
+                    title={trabalhos[ativo].label}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
               ) : (
                 <video
                   src={trabalhos[ativo].video}

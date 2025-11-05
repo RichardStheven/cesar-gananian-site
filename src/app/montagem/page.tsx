@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import GaleriaDeTrabalhos from "../../components/GaleriaDeTrabalhos";
-import Galeria2 from "../../components/Galeria2";
 import GaleriaC from "../../components/GaleriaC";
 import GaleriaM from "../../components/GaleriaM";
 import Bio from "../../components/Bio";
@@ -33,9 +32,7 @@ export default function Montagem() {
         <GaleriaDeTrabalhos />
       </div>
 
-      <div className="Galeria">
-        <Galeria2 />
-      </div>
+      {/* Galeria2 integrada em GaleriaDeTrabalhos */}
 
       <div className="Galeria">
         <GaleriaC />

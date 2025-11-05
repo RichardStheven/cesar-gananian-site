@@ -7,18 +7,17 @@ import FaixaDecorativa from '../components/FaixaDecorativa';
 const trabalhos = [
   {
     thumb: '/imagens/AD.jpg',
-    video: '/VideoMontagemCinema/meu-ayrton-por-adriane-galisteu.mp4',
+    // usar YouTube em vez do arquivo local
+    youtubeId: 'BqQQUSuz1-o',
     label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
     descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nMontagem: Cesar Gananian`,
-    videoThumb: true,
   },
   {
     thumb: '/imagens/AN.jpg',
-    video: '/VideoMontagemCinema/aqui-nao-entra-luz.mp4',
+    // usar YouTube em vez do arquivo local
+    youtubeId: 'HYiiU7j5iXA',
     label: 'Aqui Não Entra Luz / Prêmio Festival de Brasília',
     descricao: `Melhor Direção no Festival de Brasília 2025\nSeleção Oficial no IDFA 2025\nDireção: Karol Maia\nMontagem: Cesar Gananian e Fer Krajuska`,
-    videoThumb: true,
-    thumbSeek: 30,
   },
   {
     thumb: '/imagens/Bandida-o-filme.webp',
@@ -44,6 +43,31 @@ const trabalhos = [
     label: 'Cartas Marcadas / Discovery Brasil',
     descricao: `Produção: Discovery Brasil\nDireção: Karol Maia\nMontagem: Cesar Gananian`,
   },
+  // Itens migrados da antiga Galeria2 (mantendo a ordem)
+  {
+    thumb: '/imagens/ot1.jpeg',
+    video: '/imagens/outrostempos.mp4',
+    label: 'Outros Tempos / MAX',
+    descricao: `Produção: Pródigo/ HBO MAX\nDireção : João Wainer e Cesar Gananian\nMontagem: Cesar Gananian`,
+  },
+  {
+    thumb: '/imagens/junho.jpg',
+    video: '/imagens/junho.mp4',
+    label: 'Junho / Folha de São Paulo',
+    descricao: `Produção: Folha de São Paulo\nDireção : João Wainer\nMontagem: Cesar Gananian`,
+  },
+  {
+    thumb: '/imagens/contos.jpg',
+    video: '/imagens/contos.mp4',
+    label: 'Cantos De Um Livro Sagrado / Premio É Tudo Verdade',
+    descricao: `Melhor Curta Brasileiro no Festival É Tudo Verdade\nSeleção Oficial no Rotterdam Film Festival\nDireção: Cassiana Der Haroutiounian & Cesar Gananian\nMontagem: Cesar Gananian`,
+  },
+  {
+    thumb: '/imagens/Inaudito.jpg',
+    video: '/imagens/Inaudito.mp4',
+    label: 'Inaudito / Melhor Filme Festival de Tiradentes',
+    descricao: `Premio de Melhor Filme no Festival de Tiradentes\nDireção : Gregorio Gananian\nMontagem: Cesar Gananian, Danielly O.M.M., Gregorio Gananian`,
+  },
 ];
 
 export default function GaleriaNova() {
@@ -68,39 +92,23 @@ export default function GaleriaNova() {
                 className="relative bg-black rounded overflow-hidden shadow cursor-pointer"
                 onClick={() => setAtivo(i)}
               >
-                {item.videoThumb ? (
-                  <video
-                    ref={(el) => {
-                      if (!el) return;
-                      const setTime = () => {
-                        try {
-                          if (typeof item.thumbSeek === 'number') {
-                            el.currentTime = item.thumbSeek;
-                          }
-                        } catch {}
-                      };
-                      if (typeof item.thumbSeek === 'number') {
-                        if (el.readyState >= 1) {
-                          setTime();
-                        } else {
-                          el.addEventListener('loadedmetadata', setTime, { once: true });
-                        }
-                      }
-                    }}
-                    src={item.video}
-                    preload="auto"
-                    muted
-                    playsInline
-                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
-                  />
-                ) : (
-                  <img
-                    src={item.thumb}
-                    alt={item.label}
-                    className="aspect-square w-full object-cover hover:scale-105 transition-transform"
-                  />
-                )}
-                <p className="p-2 text-center text-sm text-white/70">{item.label}</p>
+                <div className="relative w-full aspect-video overflow-hidden">
+                  {item.youtubeId ? (
+                    <img
+                      src={`https://img.youtube.com/vi/${item.youtubeId}/hqdefault.jpg`}
+                      alt={item.label}
+                      className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <img
+                      src={item.thumb}
+                      alt={item.label}
+                      className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform"
+                    />
+                  )}
+                </div>
+                <p className="p-2 text-center text-sm text-white/70 min-h-[44px]">{item.label}</p>
               </div>
             ))}
           </motion.div>
@@ -114,12 +122,17 @@ export default function GaleriaNova() {
           >
             {/* PLAYER */}
             <div className="w-full md:w-2/3 flex items-center justify-center">
-              {trabalhos[ativo].videoThumb ? (
-                <video
-                  src={trabalhos[ativo].video}
-                  controls
-                  className="aspect-video w-full max-w-4xl object-cover"
-                />
+              {trabalhos[ativo].youtubeId ? (
+                <div className="aspect-video w-full max-w-4xl">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${trabalhos[ativo].youtubeId}?rel=0`}
+                    title={trabalhos[ativo].label}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
               ) : (
                 <video
                   src={trabalhos[ativo].video}
