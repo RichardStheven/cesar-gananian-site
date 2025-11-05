@@ -15,7 +15,7 @@ const videos = [
   },
   {
     thumb: '/imagens/4.webp',
-    video: '/VideoMontagemPublicidade/Cacauaré.mp4',
+    video: '/VideoMontagemPublicidade/cacauare.mp4',
     titulo: 'Cacauaré: Gemini no Gmail / Google',
     descricao: `Produção: Café Royal\nDireção: Georgia Guerra Peixe (Joca)\nChefe de montagem: Eduardo Onon\nMontagem: Cesar Gananian`,
     videoThumb: true,

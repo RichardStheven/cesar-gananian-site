@@ -7,7 +7,7 @@ import FaixaDecorativa from '../components/FaixaDecorativa';
 const trabalhos = [
   {
     thumb: '/imagens/AD.jpg',
-    video: '/VideoMontagemCinema/MeuAyrtonpor AdrianeGalisteu.mp4',
+    video: '/VideoMontagemCinema/meu-ayrton-por-adriane-galisteu.mp4',
     label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
     descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nRoteiro: Camila Kamimura, Cesar Gananian e João Wainer`,
     videoThumb: true,

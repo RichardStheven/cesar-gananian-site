@@ -7,14 +7,14 @@ import FaixaDecorativa from '../components/FaixaDecorativa';
 const trabalhos = [
   {
     thumb: '/imagens/AD.jpg',
-    video: '/VideoMontagemCinema/MeuAyrtonpor AdrianeGalisteu.mp4',
+    video: '/VideoMontagemCinema/meu-ayrton-por-adriane-galisteu.mp4',
     label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
     descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nMontagem: Cesar Gananian`,
     videoThumb: true,
   },
   {
     thumb: '/imagens/AN.jpg',
-    video: '/VideoMontagemCinema/AquiNãoEntraLuz.mp4',
+    video: '/VideoMontagemCinema/aqui-nao-entra-luz.mp4',
     label: 'Aqui Não Entra Luz / Prêmio Festival de Brasília',
     descricao: `Melhor Direção no Festival de Brasília 2025\nSeleção Oficial no IDFA 2025\nDireção: Karol Maia\nMontagem: Cesar Gananian e Fer Krajuska`,
     videoThumb: true,
