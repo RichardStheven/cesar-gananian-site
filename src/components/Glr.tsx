@@ -15,7 +15,8 @@ type Trabalho = {
 
 const trabalhos: Trabalho[] = [
   {
-    youtubeId: 'BqQQUSuz1-o',
+    thumb: '/fotoparathumbadrianeemroteiro.jpeg',
+    video: '/VideoMontagemCinema/meu-ayrton-por-adriane-galisteu.mp4',
     label: 'Meu Ayrton por Adriane Galisteu / Magnífica Filmes e HBO',
     descricao: `Produção: Magnífica Filmes/ HBO\nDireção: João Wainer\nRoteiro: Camila Kamimura, Cesar Gananian e João Wainer`,
   },
@@ -123,6 +124,7 @@ export default function GaleriaNova() {
                     src={item.thumb}
                     alt={item.label}
                     className="aspect-square w-full object-cover hover:scale-105 transition-transform"
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/imagens/AD.jpg' }}
                   />
                 )}
                 <p className="p-2 text-center text-sm text-white/70">{item.label}</p>

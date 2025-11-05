@@ -200,6 +200,41 @@ body {
 
 }
 
+/* Home loading overlay */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+.loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.loading-title {
+  color: #dad1a0;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.reveal-mask {
+  overflow: hidden;
+  display: inline-block;
+}
+.reveal-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: mask-reveal 900ms ease-out forwards;
+}
+@keyframes mask-reveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
 
 .botao-wrapper {
   position: absolute;

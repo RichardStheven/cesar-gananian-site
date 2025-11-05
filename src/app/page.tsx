@@ -11,16 +11,16 @@ const links = [
 export default function HomePage() {
   return (
     <main className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center gap-12 px-6 py-20 overflow-hidden">
-      {/* VIDEO DE FUNDO */}
+      {/* VIDEO DE FUNDO local (carrega e inicia imediatamente) */}
       <video
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover opacity-100 z-0"
-      >
-        <source src="https://www.dropbox.com/scl/fi/oxtdxsgkq0vywoy31juob/CESAR-2025-INTENSO-FINAL-3-nov.mp4?rlkey=7cg7me550aub3ki70wfh310xw&raw=1" type="video/mp4" />
-      </video>
+        src={"/videohome/CESAR%202025%20INTENSO%20FINAL%203%20nov%20low.mp4"}
+      />
 
       {/* CONTEÚDO SOBRE O VÍDEO */}
       <div className="relative z-10 text-center">
@@ -38,6 +38,8 @@ export default function HomePage() {
           ))}
         </nav>
       </div>
+
+      {/* Sem overlay/animacao: conteúdo visível imediatamente */}
     </main>
   )
 }
